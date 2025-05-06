@@ -1,0 +1,130 @@
+/* Menu Animations */
+@keyframes menuItemAppear {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes categoryTitleAppear {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Menu Category Styles */
+.category {
+  margin-bottom: 50px;
+  opacity: 0;
+  animation: categoryTitleAppear 0.8s ease forwards;
+}
+
+.category h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+  border-bottom: 2px solid #c41e3a;
+  padding-bottom: 10px;
+}
+
+/* Menu Items Grid */
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+/* Menu Item Styles */
+.menu-item {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 0;
+  animation: menuItemAppear 0.8s ease forwards;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Staggered Animation Delays */
+.menu-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.menu-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.menu-item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.menu-item:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.menu-item:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.menu-item:nth-child(6) {
+  animation-delay: 0.6s;
+}
+.menu-item:nth-child(7) {
+  animation-delay: 0.7s;
+}
+.menu-item:nth-child(8) {
+  animation-delay: 0.8s;
+}
+.menu-item:nth-child(9) {
+  animation-delay: 0.9s;
+}
+.menu-item:nth-child(10) {
+  animation-delay: 1s;
+}
+
+/* Wine and Cigar Section Animations */
+.wine-cigar-section {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: menuItemAppear 0.8s ease forwards 1.2s;
+}
+
+.wine-champagne,
+.cigars {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.wine-champagne:hover,
+.cigars:hover {
+  transform: translateY(-5px);
+}
+
+/* Wine and Cigar Lists */
+.wine-list,
+.cigar-list {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.wine-list:not(.hidden),
+.cigar-list:not(.hidden) {
+  opacity: 1;
+  transform: translateY(0);
+}

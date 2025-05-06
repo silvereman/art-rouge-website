@@ -1,580 +1,304 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>L'Art Rouge - Restaurant Gastronomique</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <div class="logo">
-            <a href="index.html">
-                <h1>L'Art Rouge</h1>
-            </a>
+      <div class="logo">
+        <a href="index.html">
+          <h1>L'Art Rouge</h1>
+        </a>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="#about">À Propos</a></li>
+          <li><a href="#reservation">Contact</a></li>
+          <li><a href="gallery.html">Galerie</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
         </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="about.html">À Propos</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="gallery.html">Galerie</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </nav>
+      </nav>
     </header>
 
-    <!-- Homepage Content -->
     <main class="home-page">
-        <section class="hero">
-            <div class="hero-content">
-                <h2>Une Expérience Culinaire Raffinée</h2>
-                <p>Bienvenue à L'Art Rouge, où la gastronomie rencontre l'élégance</p>
-                <div class="cta-buttons">
-                    <a href="#reservation" class="btn primary">Réserver une Table</a>
-                    <a href="menu.html" class="btn secondary">Découvrir le Menu</a>
-                </div>
-            </div>
-        </section>
+      <section class="hero">
+        <div class="hero-content">
+          <h2>Une Expérience Culinaire Raffinée</h2>
+          <p>Bienvenue à L'Art Rouge, où la gastronomie rencontre l'élégance</p>
+          <div class="cta-buttons">
+            <a href="#reservation" class="btn primary">Réserver une Table</a>
+            <a href="menu.html" class="btn secondary">Découvrir le Menu</a>
+          </div>
+        </div>
+      </section>
 
-        <section class="intro">
-            <div class="container">
-                <div class="intro-text">
-                    <h2>Notre Philosophie</h2>
-                    <p>À L'Art Rouge, nous croyons que la cuisine est une forme d'art qui stimule tous les sens. Notre chef talentueux utilise uniquement des ingrédients frais et locaux pour créer des plats mémorables qui racontent une histoire.</p>
-                    <p>Chaque détail, de la présentation visuelle à l'harmonie des saveurs, est soigneusement orchestré pour vous offrir une expérience gastronomique inoubliable.</p>
+      <section class="featured-dishes">
+        <div class="container">
+          <h2>Nos Spécialités</h2>
+          <div class="dishes-carousel">
+            <div class="dish">
+              <div class="dish-image">
+                <div class="img-placeholder">
+                  Suprême royal de gambas au caraïbe crémeux
                 </div>
+              </div>
+              <div class="dish-info">
+                <h3>Suprême royal de gambas</h3>
+                <p>Gambas royales dans une sauce caraïbe crémeuse</p>
+              </div>
             </div>
-        </section>
+            <div class="dish">
+              <div class="dish-image">
+                <div class="img-placeholder">Côte de bœuf sauce béarnaise</div>
+              </div>
+              <div class="dish-info">
+                <h3>Côte de bœuf</h3>
+                <p>Servie avec une sauce béarnaise maison</p>
+              </div>
+            </div>
+            <div class="dish">
+              <div class="dish-image">
+                <div class="img-placeholder">Mix grill de la mer</div>
+              </div>
+              <div class="dish-info">
+                <h3>Mix grill de la mer</h3>
+                <p>Gambas, capitaine, calamar</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section class="featured-dishes">
-            <div class="container">
-                <h2>Nos Créations Signature</h2>
-                <div class="dishes-carousel">
-                    <div class="dish">
-                        <div class="dish-image">
-                            <!-- Image placeholder -->
-                            <div class="img-placeholder">Image du Plat</div>
-                        </div>
-                        <div class="dish-info">
-                            <h3>Le Canard à l'Orange Réinventé</h3>
-                            <p>Magret de canard, sauce à l'orange infusée au romarin, purée de patates douces</p>
-                        </div>
-                    </div>
-                    <div class="dish">
-                        <div class="dish-image">
-                            <!-- Image placeholder -->
-                            <div class="img-placeholder">Image du Plat</div>
-                        </div>
-                        <div class="dish-info">
-                            <h3>Risotto aux Cèpes et Truffe</h3>
-                            <p>Risotto crémeux aux cèpes sauvages, huile de truffe et copeaux de parmesan affiné</p>
-                        </div>
-                    </div>
-                    <div class="dish">
-                        <div class="dish-image">
-                            <!-- Image placeholder -->
-                            <div class="img-placeholder">Image du Plat</div>
-                        </div>
-                        <div class="dish-info">
-                            <h3>Saint-Jacques Caramélisées</h3>
-                            <p>Saint-Jacques poêlées, crème de panais, chips de légumes et réduction de cidre</p>
-                        </div>
-                    </div>
-                </div>
+      <section class="gallery-preview">
+        <div class="container">
+          <h2>Notre Galerie</h2>
+          <div class="gallery-scroll">
+            <div class="gallery-item">
+              <div class="img-placeholder">Photo d'Intérieur</div>
             </div>
-        </section>
+            <div class="gallery-item">
+              <div class="img-placeholder">Photo de Plat</div>
+            </div>
+            <div class="gallery-item">
+              <div class="img-placeholder">Photo d'Événement</div>
+            </div>
+            <div class="gallery-item">
+              <div class="img-placeholder">Photo d'Intérieur</div>
+            </div>
+            <div class="gallery-item">
+              <div class="img-placeholder">Photo de Plat</div>
+            </div>
+            <div class="gallery-item">
+              <div class="img-placeholder">Photo d'Événement</div>
+            </div>
+          </div>
+          <a href="gallery.html" class="btn secondary">Voir Plus</a>
+        </div>
+      </section>
 
-        <section class="instagram-feed">
-            <div class="container">
-                <h2>Suivez-nous sur Instagram</h2>
-                <p>@lartrouge</p>
-                <div class="instagram-grid">
-                    <!-- Placeholders for Instagram feed -->
-                    <div class="insta-post">
-                        <div class="img-placeholder">Post Instagram</div>
-                    </div>
-                    <div class="insta-post">
-                        <div class="img-placeholder">Post Instagram</div>
-                    </div>
-                    <div class="insta-post">
-                        <div class="img-placeholder">Post Instagram</div>
-                    </div>
-                    <div class="insta-post">
-                        <div class="img-placeholder">Post Instagram</div>
-                    </div>
-                </div>
+      <section id="about" class="about-section">
+        <div class="container">
+          <h2>À Propos de L'Art Rouge</h2>
+          <div class="about-content">
+            <div class="about-text">
+              <p>
+                L'Art Rouge est né de la passion pour la gastronomie française
+                et l'art culinaire. Notre restaurant s'est imposé comme une
+                référence dans le paysage gastronomique local, offrant une
+                expérience sensorielle complète à nos clients.
+              </p>
+              <p>
+                Notre philosophie est simple : utiliser des ingrédients de la
+                plus haute qualité, respecter les traditions culinaires tout en
+                innovant, et servir chaque plat avec passion et précision.
+              </p>
             </div>
-        </section>
+            <div class="about-image">
+              <div class="img-placeholder">Photo du Restaurant</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ambiance">
+        <div class="container">
+          <h2>Notre Ambiance</h2>
+          <div class="gallery-grid">
+            <div class="gallery-item">
+              <div class="img-placeholder">Photo d'Intérieur</div>
+            </div>
+            <div class="gallery-item">
+              <div class="img-placeholder">Photo d'Intérieur</div>
+            </div>
+            <div class="gallery-item">
+              <div class="img-placeholder">Photo d'Intérieur</div>
+            </div>
+            <div class="gallery-item">
+              <div class="img-placeholder">Photo d'Intérieur</div>
+            </div>
+          </div>
+          <p>
+            L'Art Rouge offre un cadre élégant et contemporain, où les tons
+            chauds de rouge et les accents dorés créent une atmosphère à la fois
+            intime et sophistiquée. Notre salle à manger principale peut
+            accueillir jusqu'à 45 convives, tandis que notre salon privé est
+            parfait pour des événements spéciaux jusqu'à 12 personnes.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact-info">
+        <div class="container">
+          <h2>Contact & Réservations</h2>
+          <div class="info-grid">
+            <div class="info-card">
+              <i class="fas fa-map-marker-alt"></i>
+              <h3>Adresse</h3>
+              <p>123 Rue de la Gastronomie</p>
+              <p>Ouagadougou, Burkina Faso</p>
+            </div>
+            <div class="info-card">
+              <i class="fas fa-clock"></i>
+              <h3>Horaires d'Ouverture</h3>
+              <p>Mardi - Dimanche: 16h00 - 00h00</p>
+              <p>Lundi: Fermé</p>
+            </div>
+            <div class="info-card">
+              <i class="fas fa-phone"></i>
+              <h3>Téléphone</h3>
+              <p>Réservations: +226 XX XX XX XX</p>
+              <p>Information: +226 XX XX XX XX</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="map-section">
+        <div class="container">
+          <h3>Nous Trouver</h3>
+          <div class="map-container">
+            <!-- Placeholder for Google Maps Integration -->
+            <div class="map-placeholder">Carte Interactive Google Maps</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reservation-widget">
+        <div class="container">
+          <h3>Réserver une Table</h3>
+          <form id="reservation-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="res-date">Date</label>
+                <input type="date" id="res-date" name="res-date" required />
+              </div>
+              <div class="form-group">
+                <label for="res-time">Heure</label>
+                <input type="time" id="res-time" name="res-time" required />
+              </div>
+              <div class="form-group">
+                <label for="res-guests">Nombre de Personnes</label>
+                <select id="res-guests" name="res-guests" required>
+                  <option value="1">1 personne</option>
+                  <option value="2">2 personnes</option>
+                  <option value="3">3 personnes</option>
+                  <option value="4">4 personnes</option>
+                  <option value="5">5 personnes</option>
+                  <option value="6">6 personnes</option>
+                  <option value="more">Plus de 6 personnes</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="res-name">Nom</label>
+                <input type="text" id="res-name" name="res-name" required />
+              </div>
+              <div class="form-group">
+                <label for="res-email">Email</label>
+                <input type="email" id="res-email" name="res-email" required />
+              </div>
+              <div class="form-group">
+                <label for="res-phone">Téléphone</label>
+                <input type="tel" id="res-phone" name="res-phone" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="res-notes"
+                >Notes Spéciales (allergies, occasions spéciales)</label
+              >
+              <textarea id="res-notes" name="res-notes" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn primary">
+              Réserver Maintenant
+            </button>
+          </form>
+        </div>
+      </section>
     </main>
 
-    <!-- Menu Page Content -->
-    <div class="menu-page">
-        <section class="menu-header">
-            <div class="container">
-                <h2>Notre Menu</h2>
-                <p>Une cuisine raffinée inspirée par les saisons</p>
-            </div>
-        </section>
-
-        <section class="menu-categories">
-            <div class="container">
-                <div class="category">
-                    <h3>Entrées</h3>
-                    <div class="menu-items">
-                        <div class="menu-item">
-                            <div class="item-image">
-                                <div class="img-placeholder">Image du Plat</div>
-                            </div>
-                            <div class="item-description">
-                                <h4>Foie Gras Maison</h4>
-                                <p>Foie gras mi-cuit, chutney de figues, pain de campagne toasté</p>
-                                <span class="price">18€</span>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <div class="item-image">
-                                <div class="img-placeholder">Image du Plat</div>
-                            </div>
-                            <div class="item-description">
-                                <h4>Tartare de Saumon</h4>
-                                <p>Saumon frais, avocat, agrumes, herbes fraîches</p>
-                                <span class="price">16€</span>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <div class="item-image">
-                                <div class="img-placeholder">Image du Plat</div>
-                            </div>
-                            <div class="item-description">
-                                <h4>Velouté de Champignons</h4>
-                                <p>Champignons de saison, crème légère, huile de noisette</p>
-                                <span class="price">14€</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="category">
-                    <h3>Plats Principaux</h3>
-                    <div class="menu-items">
-                        <div class="menu-item">
-                            <div class="item-image">
-                                <div class="img-placeholder">Image du Plat</div>
-                            </div>
-                            <div class="item-description">
-                                <h4>Filet de Bœuf Rossini</h4>
-                                <p>Filet de bœuf, escalope de foie gras poêlée, sauce au truffe, pommes fondantes</p>
-                                <span class="price">32€</span>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <div class="item-image">
-                                <div class="img-placeholder">Image du Plat</div>
-                            </div>
-                            <div class="item-description">
-                                <h4>Bar Rôti</h4>
-                                <p>Filet de bar, risotto noir à l'encre de seiche, émulsion au safran</p>
-                                <span class="price">28€</span>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <div class="item-image">
-                                <div class="img-placeholder">Image du Plat</div>
-                            </div>
-                            <div class="item-description">
-                                <h4>Suprême de Volaille</h4>
-                                <p>Suprême de volaille fermière, mousseline de carottes, sauce aux morilles</p>
-                                <span class="price">24€</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="category">
-                    <h3>Desserts</h3>
-                    <div class="menu-items">
-                        <div class="menu-item">
-                            <div class="item-image">
-                                <div class="img-placeholder">Image du Plat</div>
-                            </div>
-                            <div class="item-description">
-                                <h4>Tarte au Citron Meringuée</h4>
-                                <p>Crème de citron, meringue italienne, sorbet citron vert</p>
-                                <span class="price">12€</span>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <div class="item-image">
-                                <div class="img-placeholder">Image du Plat</div>
-                            </div>
-                            <div class="item-description">
-                                <h4>Soufflé au Chocolat</h4>
-                                <p>Chocolat noir 70%, glace vanille, crumble de cacao</p>
-                                <span class="price">14€</span>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <div class="item-image">
-                                <div class="img-placeholder">Image du Plat</div>
-                            </div>
-                            <div class="item-description">
-                                <h4>Assiette de Fromages</h4>
-                                <p>Sélection de fromages affinés, confiture de saison, noix</p>
-                                <span class="price">16€</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="category">
-                    <h3>Boissons</h3>
-                    <div class="menu-items">
-                        <div class="menu-item">
-                            <div class="item-image">
-                                <div class="img-placeholder">Image de la Boisson</div>
-                            </div>
-                            <div class="item-description">
-                                <h4>Sélection de Vins</h4>
-                                <p>Notre sommelier vous proposera le vin parfait pour accompagner votre repas</p>
-                                <span class="price">À partir de 8€ le verre</span>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <div class="item-image">
-                                <div class="img-placeholder">Image de la Boisson</div>
-                            </div>
-                            <div class="item-description">
-                                <h4>Cocktails Signature</h4>
-                                <p>Découvrez nos créations exclusives élaborées par notre mixologue</p>
-                                <span class="price">À partir de 12€</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <!-- About Us Page Content -->
-    <div class="about-page">
-        <section class="about-header">
-            <div class="container">
-                <h2>À Propos de L'Art Rouge</h2>
-                <p>Notre histoire, notre passion</p>
-            </div>
-        </section>
-
-        <section class="story">
-            <div class="container">
-                <div class="story-content">
-                    <div class="story-text">
-                        <h3>Notre Histoire</h3>
-                        <p>L'Art Rouge est né de la passion de son fondateur, Chef Michel Dubois, qui a rêvé de créer un espace où la gastronomie française traditionnelle rencontre l'innovation culinaire contemporaine.</p>
-                        <p>Ouvert en 2019, notre restaurant s'est rapidement imposé comme une référence dans le paysage gastronomique local. Nous nous efforçons de créer non seulement des plats exceptionnels, mais aussi une expérience sensorielle complète pour nos clients.</p>
-                        <p>Notre philosophie est simple : utiliser des ingrédients de la plus haute qualité, respecter les traditions culinaires tout en innovant, et servir chaque plat avec passion et précision.</p>
-                    </div>
-                    <div class="story-image">
-                        <div class="img-placeholder">Image du Restaurant</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="chef-profile">
-            <div class="container">
-                <h3>Notre Chef</h3>
-                <div class="chef-content">
-                    <div class="chef-image">
-                        <div class="img-placeholder">Photo du Chef</div>
-                    </div>
-                    <div class="chef-bio">
-                        <h4>Chef Michel Dubois</h4>
-                        <p>Avec plus de 20 ans d'expérience dans des établissements étoilés à travers la France, le Chef Michel apporte son expertise et sa créativité à chaque plat servi à L'Art Rouge.</p>
-                        <p>Formé à l'École de Cuisine Alain Ducasse, il a travaillé aux côtés des plus grands noms de la gastronomie française avant de réaliser son rêve en ouvrant L'Art Rouge.</p>
-                        <p>Sa cuisine est caractérisée par un profond respect des produits, une technique impeccable et une touche de créativité qui surprend et enchante.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="ambiance">
-            <div class="container">
-                <h3>Notre Ambiance</h3>
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <div class="img-placeholder">Photo d'Intérieur</div>
-                    </div>
-                    <div class="gallery-item">
-                        <div class="img-placeholder">Photo d'Intérieur</div>
-                    </div>
-                    <div class="gallery-item">
-                        <div class="img-placeholder">Photo d'Intérieur</div>
-                    </div>
-                    <div class="gallery-item">
-                        <div class="img-placeholder">Photo d'Intérieur</div>
-                    </div>
-                </div>
-                <p>L'Art Rouge offre un cadre élégant et contemporain, où les tons chauds de rouge et les accents dorés créent une atmosphère à la fois intime et sophistiquée. Notre salle à manger principale peut accueillir jusqu'à 45 convives, tandis que notre salon privé est parfait pour des événements spéciaux jusqu'à 12 personnes.</p>
-            </div>
-        </section>
-    </div>
-
-    <!-- Contact Page Content -->
-    <div class="contact-page">
-        <section class="contact-header">
-            <div class="container">
-                <h2>Contact & Réservations</h2>
-                <p>Nous sommes impatients de vous accueillir</p>
-            </div>
-        </section>
-
-        <section class="contact-info">
-            <div class="container">
-                <div class="info-grid">
-                    <div class="info-card">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <h3>Adresse</h3>
-                        <p>123 Rue de la Gastronomie</p>
-                        <p>75001 Paris, France</p>
-                    </div>
-                    <div class="info-card">
-                        <i class="fas fa-clock"></i>
-                        <h3>Horaires d'Ouverture</h3>
-                        <p>Mardi - Samedi: 19h00 - 23h00</p>
-                        <p>Dimanche - Lundi: Fermé</p>
-                    </div>
-                    <div class="info-card">
-                        <i class="fas fa-phone"></i>
-                        <h3>Téléphone</h3>
-                        <p>Réservations: +33 1 23 45 67 89</p>
-                        <p>Information: +33 1 23 45 67 90</p>
-                    </div>
-                    <div class="info-card">
-                        <i class="fas fa-envelope"></i>
-                        <h3>Email</h3>
-                        <p>reservations@lartrouge.fr</p>
-                        <p>info@lartrouge.fr</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="map-section">
-            <div class="container">
-                <h3>Nous Trouver</h3>
-                <div class="map-container">
-                    <!-- Placeholder for Google Maps Integration -->
-                    <div class="map-placeholder">Carte Interactive Google Maps</div>
-                </div>
-            </div>
-        </section>
-
-        <section class="contact-form">
-            <div class="container">
-                <h3>Contactez-nous</h3>
-                <form id="contact-form">
-                    <div class="form-group">
-                        <label for="name">Nom</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Téléphone</label>
-                        <input type="tel" id="phone" name="phone">
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Sujet</label>
-                        <select id="subject" name="subject">
-                            <option value="reservation">Réservation</option>
-                            <option value="info">Information</option>
-                            <option value="feedback">Commentaires</option>
-                            <option value="other">Autre</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn primary">Envoyer</button>
-                </form>
-            </div>
-        </section>
-
-        <section class="reservation-widget">
-            <div class="container">
-                <h3>Réserver une Table</h3>
-                <form id="reservation-form">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="res-date">Date</label>
-                            <input type="date" id="res-date" name="res-date" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="res-time">Heure</label>
-                            <input type="time" id="res-time" name="res-time" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="res-guests">Nombre de Personnes</label>
-                            <select id="res-guests" name="res-guests" required>
-                                <option value="1">1 personne</option>
-                                <option value="2">2 personnes</option>
-                                <option value="3">3 personnes</option>
-                                <option value="4">4 personnes</option>
-                                <option value="5">5 personnes</option>
-                                <option value="6">6 personnes</option>
-                                <option value="more">Plus de 6 personnes</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="res-name">Nom</label>
-                            <input type="text" id="res-name" name="res-name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="res-email">Email</label>
-                            <input type="email" id="res-email" name="res-email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="res-phone">Téléphone</label>
-                            <input type="tel" id="res-phone" name="res-phone" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="res-notes">Notes Spéciales (allergies, occasions spéciales)</label>
-                        <textarea id="res-notes" name="res-notes" rows="3"></textarea>
-                    </div>
-                    <button type="submit" class="btn primary">Réserver Maintenant</button>
-                </form>
-            </div>
-        </section>
-    </div>
-
-    <!-- Gallery Page Content -->
-    <div class="gallery-page">
-        <section class="gallery-header">
-            <div class="container">
-                <h2>Notre Galerie</h2>
-                <p>Découvrez l'univers de L'Art Rouge en images</p>
-            </div>
-        </section>
-
-        <section class="gallery-filter">
-            <div class="container">
-                <div class="filter-buttons">
-                    <button class="filter-btn active" data-filter="all">Tout</button>
-                    <button class="filter-btn" data-filter="food">Plats</button>
-                    <button class="filter-btn" data-filter="interior">Intérieur</button>
-                    <button class="filter-btn" data-filter="events">Événements</button>
-                </div>
-            </div>
-        </section>
-
-        <section class="gallery-grid-container">
-            <div class="container">
-                <div class="masonry-gallery">
-                    <!-- Food images -->
-                    <div class="gallery-item food">
-                        <div class="img-placeholder">Photo de Plat</div>
-                    </div>
-                    <div class="gallery-item food">
-                        <div class="img-placeholder">Photo de Plat</div>
-                    </div>
-                    <div class="gallery-item food">
-                        <div class="img-placeholder">Photo de Plat</div>
-                    </div>
-                    <div class="gallery-item food">
-                        <div class="img-placeholder">Photo de Plat</div>
-                    </div>
-                    <div class="gallery-item food">
-                        <div class="img-placeholder">Photo de Plat</div>
-                    </div>
-                    <div class="gallery-item food">
-                        <div class="img-placeholder">Photo de Plat</div>
-                    </div>
-
-                    <!-- Interior images -->
-                    <div class="gallery-item interior">
-                        <div class="img-placeholder">Photo d'Intérieur</div>
-                    </div>
-                    <div class="gallery-item interior">
-                        <div class="img-placeholder">Photo d'Intérieur</div>
-                    </div>
-                    <div class="gallery-item interior">
-                        <div class="img-placeholder">Photo d'Intérieur</div>
-                    </div>
-                    <div class="gallery-item interior">
-                        <div class="img-placeholder">Photo d'Intérieur</div>
-                    </div>
-
-                    <!-- Events images -->
-                    <div class="gallery-item events">
-                        <div class="img-placeholder">Photo d'Événement</div>
-                    </div>
-                    <div class="gallery-item events">
-                        <div class="img-placeholder">Photo d'Événement</div>
-                    </div>
-                    <div class="gallery-item events">
-                        <div class="img-placeholder">Photo d'Événement</div>
-                    </div>
-                    <div class="gallery-item events">
-                        <div class="img-placeholder">Photo d'Événement</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h2>L'Art Rouge</h2>
-                    <p>Cuisine gastronomique française</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Liens Rapides</h4>
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="menu.html">Menu</a></li>
-                        <li><a href="about.html">À Propos</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="gallery.html">Galerie</a></li>
-                    </ul>
-                </div>
-                <div class="footer-hours">
-                    <h4>Horaires d'Ouverture</h4>
-                    <p>Mardi - Samedi: 19h00 - 23h00</p>
-                    <p>Dimanche - Lundi: Fermé</p>
-                </div>
-                <div class="footer-social">
-                    <h4>Suivez-nous</h4>
-                    <div class="social-icons">
-                        <a href="https://facebook.com/lartrouge" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://instagram.com/lartrouge" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://twitter.com/lartrouge" target="_blank"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h2>L'Art Rouge</h2>
+            <p>Cuisine gastronomique française</p>
+          </div>
+          <div class="footer-links">
+            <h4>Liens Rapides</h4>
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="#about">À Propos</a></li>
+              <li><a href="#reservation">Contact</a></li>
+              <li><a href="gallery.html">Galerie</a></li>
+            </ul>
+          </div>
+          <div class="footer-hours">
+            <h4>Horaires d'Ouverture</h4>
+            <p>Mardi - Dimanche: 16h00 - 00h00</p>
+            <p>Lundi: Fermé</p>
+          </div>
+          <div class="footer-social">
+            <h4>Suivez-nous</h4>
+            <div class="social-icons">
+              <a href="https://facebook.com/lartrouge" target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://instagram.com/lartrouge" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://twitter.com/lartrouge" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2023 L'Art Rouge. Tous droits réservés.</p>
-            </div>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 L'Art Rouge. Tous droits réservés.</p>
+        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

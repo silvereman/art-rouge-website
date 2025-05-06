@@ -1,246 +1,702 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Notre Menu - L'Art Rouge</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="menu-animations.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <div class="logo">
-            <a href="index.html">
-                <h1>L'Art Rouge</h1>
-            </a>
+      <div class="logo">
+        <a href="index.html">
+          <h1>L'Art Rouge</h1>
+        </a>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="menu.html#about">À Propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="gallery.html">Galerie</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
         </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="about.html">À Propos</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="gallery.html">Galerie</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </nav>
+      </nav>
     </header>
 
-    <!-- Menu Page Content -->
-    <div class="menu-page">
-        <section class="menu-header">
-            <div class="container">
-                <h2>Notre Menu</h2>
-                <p>Une cuisine raffinée inspirée par les saisons</p>
+    <main class="menu-page">
+      <section class="menu-header">
+        <div class="container">
+          <h2>Notre Menu</h2>
+          <p>Une cuisine raffinée inspirée par les saisons</p>
+        </div>
+      </section>
+
+      <section class="menu-content">
+        <div class="container">
+          <div class="category">
+            <h3>Nos Bouchées et Tapas</h3>
+            <div class="menu-items">
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Brochettes de crevettes caramélisées</h4>
+                  <p>au parfum d'orange</p>
+                  <span class="price">5 000F</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Fromage</h4>
+                  <span class="price">2 500F</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Nems aux crevettes</h4>
+                  <span class="price">5 000F</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Nems au poulet</h4>
+                  <span class="price">4 000F</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Nems au bœuf</h4>
+                  <span class="price">4 000F</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Tempura de légumes</h4>
+                  <span class="price">3 000F</span>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
 
-        <section class="menu-content">
-            <div class="container">
-                <div class="intro-text fade-in">
-                    <p>Chez L'Art Rouge, notre menu évolue au fil des saisons, mettant en valeur les produits locaux les plus frais. Notre chef exécutif combine techniques traditionnelles françaises et innovations culinaires pour créer des plats qui sont aussi beaux que délicieux.</p>
+          <div class="category">
+            <h3>Nos Entrées Froides</h3>
+            <div class="menu-items">
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Salade fraîcheur</h4>
+                  <p>
+                    laitue, tomate, carotte, haricot vert, concombre, pomme de
+                    terre, olives, oignon
+                  </p>
+                  <span class="price">4 000F</span>
                 </div>
-
-                <div class="category fade-in">
-                    <h3>Entrées</h3>
-                    <div class="menu-items">
-                        <div class="menu-item">
-                            <div class="item-image">
-                                <div class="img-placeholder">Foie Gras Poêlé</div>
-                            </div>
-                            <div class="item-description">
-                                <h4>Foie Gras Poêlé</h4>
-                                <p>Escalope de foie gras poêlée, compotée de pommes caramélisées au Calvados, pain brioché toasté</p>
-                                <span class="price">24€</span>
-                            </div>
-                        </div>
-
-                        <div class="menu-item">
-                            <div class="item-image">
-                                <div class="img-placeholder">Tartare de Saint-Jacques</div>
-                            </div>
-                            <div class="item-description">
-                                <h4>Tartare de Saint-Jacques</h4>
-                                <p>Saint-Jacques fraîches, avocat, mangue, citron vert, huile d'olive vierge, coriandre fraîche</p>
-                                <span class="price">22€</span>
-                            </div>
-                        </div>
-
-                        <div class="menu-item">
-                            <div class="item-image">
-                                <div class="img-placeholder">Velouté de Champignons</div>
-                            </div>
-                            <div class="item-description">
-                                <h4>Velouté de Champignons</h4>
-                                <p>Crème de champignons sauvages, truffe noire râpée, croutons à l'ail, huile de truffe</p>
-                                <span class="price">18€</span>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Salade de foies de volaille</h4>
+                  <p>Salade verte, foie de volaille poêlées, tomates</p>
+                  <span class="price">5 000F</span>
                 </div>
-
-                <div class="category fade-in">
-                    <h3>Plats Principaux</h3>
-                    <div class="menu-items">
-                        <div class="menu-item">
-                            <div class="item-image">
-                                <div class="img-placeholder">Filet de Bœuf Rossini</div>
-                            </div>
-                            <div class="item-description">
-                                <h4>Filet de Bœuf Rossini</h4>
-                                <p>Filet de bœuf, escalope de foie gras poêlée, sauce au truffe, pommes Anna, légumes de saison</p>
-                                <span class="price">42€</span>
-                            </div>
-                        </div>
-
-                        <div class="menu-item">
-                            <div class="item-image">
-                                <div class="img-placeholder">Bar en Croûte de Sel</div>
-                            </div>
-                            <div class="item-description">
-                                <h4>Bar en Croûte de Sel</h4>
-                                <p>Bar entier cuit en croûte de sel, fenouil confit, purée de céleri, sauce vierge aux herbes fraîches</p>
-                                <span class="price">38€</span>
-                            </div>
-                        </div>
-
-                        <div class="menu-item">
-                            <div class="item-image">
-                                <div class="img-placeholder">Risotto aux Truffes</div>
-                            </div>
-                            <div class="item-description">
-                                <h4>Risotto aux Truffes</h4>
-                                <p>Risotto carnaroli crémeux, truffe noire, parmesan vieilli 24 mois, huile de truffe blanche</p>
-                                <span class="price">36€</span>
-                            </div>
-                        </div>
-
-                        <div class="menu-item">
-                            <div class="item-image">
-                                <div class="img-placeholder">Carré d'Agneau</div>
-                            </div>
-                            <div class="item-description">
-                                <h4>Carré d'Agneau</h4>
-                                <p>Carré d'agneau rôti aux herbes de Provence, jus corsé, gratin dauphinois, légumes glacés</p>
-                                <span class="price">40€</span>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Salade au saumon fumé</h4>
+                  <p>Salade verte, saumon fumé, toast beurre à l'ail</p>
+                  <span class="price">8 000F</span>
                 </div>
-
-                <div class="category fade-in">
-                    <h3>Desserts</h3>
-                    <div class="menu-items">
-                        <div class="menu-item">
-                            <div class="item-image">
-                                <div class="img-placeholder">Soufflé au Grand Marnier</div>
-                            </div>
-                            <div class="item-description">
-                                <h4>Soufflé au Grand Marnier</h4>
-                                <p>Soufflé chaud au Grand Marnier, crème anglaise à la vanille de Madagascar</p>
-                                <span class="price">16€</span>
-                            </div>
-                        </div>
-
-                        <div class="menu-item">
-                            <div class="item-image">
-                                <div class="img-placeholder">Tarte au Citron Meringuée</div>
-                            </div>
-                            <div class="item-description">
-                                <h4>Tarte au Citron Meringuée</h4>
-                                <p>Tarte au citron revisitée, meringue italienne flambée, sorbet citron vert</p>
-                                <span class="price">14€</span>
-                            </div>
-                        </div>
-
-                        <div class="menu-item">
-                            <div class="item-image">
-                                <div class="img-placeholder">Assiette de Fromages</div>
-                            </div>
-                            <div class="item-description">
-                                <h4>Assiette de Fromages</h4>
-                                <p>Sélection de fromages affinés, pain aux noix, confiture de cerises noires</p>
-                                <span class="price">18€</span>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Salade chicken cheese</h4>
+                  <p>
+                    Salade verte, crouton de pain, parmesan, tomate, blanc de
+                    poulet
+                  </p>
+                  <span class="price">6 000F</span>
                 </div>
-
-                <div class="wine-pairing fade-in">
-                    <h3>Vins & Champagnes</h3>
-                    <p>Notre sommelier se fera un plaisir de vous suggérer les meilleurs accords mets et vins pour sublimer votre expérience culinaire. N'hésitez pas à lui demander conseil.</p>
-                    <a href="#" class="btn secondary">Découvrir notre Carte des Vins</a>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Rouleaux de printemps</h4>
+                  <p>
+                    Crevettes, salade, carotte, concombre, poivron, sauce soja
+                  </p>
+                  <span class="price">5 000F</span>
                 </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Salade l'Art Rouge</h4>
+                  <p>
+                    Laitue, tomate, concombre, carotte, maïs doux, jambon bœuf
+                    ou porc, blanc de poulet grillées, cornichons, œufs
+                  </p>
+                  <span class="price">6 500F</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Salade du chef</h4>
+                  <p>
+                    laitue, tomate, carotte, oignon, maïs doux, concombre,
+                    crevettes décortiquées, feuilles de menthe
+                  </p>
+                  <span class="price">6 000F</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Assiette de charcuterie</h4>
+                  <p>jambon, chorizo, salami, fromage, cornichons</p>
+                  <span class="price">7 500F</span>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
 
-        <section class="instagram-feed">
-            <div class="container">
-                <h2>Suivez-nous sur Instagram</h2>
-                <p>@lartrouge</p>
-                <div class="instagram-grid">
-                    <!-- Placeholders for Instagram feed -->
-                    <div class="insta-post">
-                        <div class="img-placeholder">Post Instagram</div>
-                    </div>
-                    <div class="insta-post">
-                        <div class="img-placeholder">Post Instagram</div>
-                    </div>
-                    <div class="insta-post">
-                        <div class="img-placeholder">Post Instagram</div>
-                    </div>
-                    <div class="insta-post">
-                        <div class="img-placeholder">Post Instagram</div>
-                    </div>
+          <div class="category">
+            <h3>Nos Viandes</h3>
+            <div class="menu-items">
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Le bœuf bourguignon</h4>
+                  <p>
+                    Viande de bœuf braisée au vin rouge, échalote, champignons
+                    et lardons
+                  </p>
+                  <span class="price">8 000F</span>
                 </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>L'Art Rouge premium steak</h4>
+                  <p>
+                    Carré de bœuf mariné et grillé à la perfection servi avec
+                    une réduction de jus de veau
+                  </p>
+                  <span class="price">8 000F</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Gigot d'agneau de 7h</h4>
+                  <p>
+                    Servi avec sa réduction de fond de veau au vin blanc,
+                    échalotes et tomate
+                  </p>
+                  <span class="price">9 000F</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Côte de porc grillée</h4>
+                  <p>paprika, curry, sauce spéciale</p>
+                  <span class="price">7 000F</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Poulet grillé</h4>
+                  <span class="price">7 500F</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Brochette de filet de bœuf</h4>
+                  <span class="price">7 000F</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Côte de bœuf sauce béarnaise</h4>
+                  <span class="price">8 500F</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Ailes de poulet japonais</h4>
+                  <span class="price">6 000F</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Brochettes de poulet</h4>
+                  <span class="price">7 000F</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Filet de bœuf grillé</h4>
+                  <p>Sauce Poivre vert/crème aux champignons/Roquefort</p>
+                  <span class="price">9 500F</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Sauce supplément</h4>
+                  <span class="price">2 000F</span>
+                </div>
+              </div>
             </div>
-        </section>
-    </div>
+          </div>
+
+          <div class="category">
+            <h3>Nos Poissons et Crustacés</h3>
+            <div class="menu-items">
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Pavé de capitaine</h4>
+                  <p>Sauce teriyaki/sauce crème aux champignons</p>
+                  <span class="price">9 500F</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Brochette de capitaine</h4>
+                  <span class="price">8 000F</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Suprême royal de gambas au caraïbe crémeux</h4>
+                  <span class="price">16 500F</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Gambas grillées</h4>
+                  <p>Ail, persil, sauce américaine</p>
+                  <span class="price">15 000F</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Carpe braisée</h4>
+                  <span class="price">7 000F</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Mix grill de la mer</h4>
+                  <p>Gambas, capitaine, calamar</p>
+                  <span class="price">20 000F</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Saumon grillé à l'unilatéral</h4>
+                  <p>Beurre citron à l'orange</p>
+                  <span class="price">15 000F</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Crevettes sautées à l'ail et au persil</h4>
+                  <span class="price">8 500F</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Calamars grillés jus à l'ail et au citron</h4>
+                  <span class="price">8 000F</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Sauce supplément</h4>
+                  <span class="price">2 000F</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="category">
+            <h3>Nos Pâtes</h3>
+            <div class="menu-items">
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Pennes au poulet sauce pesto</h4>
+                  <span class="price">5 000F</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>La carbonara</h4>
+                  <p>
+                    spaghetti à la vraie sauce onctueuse lardon, parmesan, ail
+                    et herbes fraîches
+                  </p>
+                  <span class="price">5 500F</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Tagliatelles aux crevettes sauce crémeuse</h4>
+                  <span class="price">7 000F</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="category">
+            <h3>Nos Garnitures</h3>
+            <div class="menu-items">
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Légumes sautés</h4>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Pomme dauphine</h4>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Frites de pomme de terre</h4>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Alloco, Riz & Attiéké</h4>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Purée de pomme de terre</h4>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Pommes paille</h4>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Pommes sautées</h4>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Gratin dauphinois</h4>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Garniture supplément</h4>
+                  <span class="price">1 500F</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="category">
+            <h3>Nos Desserts</h3>
+            <div class="menu-items">
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Crème brulée</h4>
+                  <span class="price">3 500F</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Salade de fruits de saison</h4>
+                  <span class="price">2 500F</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Crêpe vanille/chocolat</h4>
+                  <span class="price">2 500F</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Fondant au chocolat</h4>
+                  <span class="price">3 500F</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Thé-infusion</h4>
+                  <span class="price">1 000F</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Café Nespresso</h4>
+                  <span class="price">1 000F</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="category">
+            <h3>Nos Self Grill</h3>
+            <div class="menu-items">
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>COFFRET ROSE</h4>
+                  <p>
+                    5 merguez, 4 brochettes de filet de bœuf, 2 côtes de porc ou
+                    2 côtes de veau, 2 saucisses de Toulouse, 1garniture
+                  </p>
+                  <span class="price">25 000F</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>COFFRET TULIPE</h4>
+                  <p>
+                    5 merguez, 2 côtes de porc ou côtes de veau, 2 saucisses de
+                    Toulouse, 2 brochettes de filet de bœuf, 2 brochettes de
+                    capitaine, 1 poulet, 1 garniture
+                  </p>
+                  <span class="price">30 000F</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>COFFRET ORCHIDÉE</h4>
+                  <p>
+                    1 gigot d'agneau, 3 échines de porc ou 3 côtes de veau, 2
+                    saucisses de Toulouse, 2 pavés de filet de bœuf, 1 poulet, 2
+                    brochettes de capitaine, 2 garnitures
+                  </p>
+                  <span class="price">40 000F</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>COFFRET NENUPHAR</h4>
+                  <p>
+                    Capitaine ou dorade entier, 2 brochettes de gambas, 4
+                    brochettes de calamar, 2 brochettes de filet de capitaine
+                  </p>
+                  <span class="price">45 000F</span>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>COFFRET SPÉCIAL SUR DEVIS</h4>
+                  <p>
+                    After work +10 personnes (Une réservation est nécessaire 72h
+                    à l'avance)
+                  </p>
+                  <span class="price">Sur Devis</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="category">
+            <h3>Nos Boissons</h3>
+            <div class="menu-items">
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Nos Bières</h4>
+                  <p>Hennekein 33cl - 2 000F</p>
+                  <p>Beaufort 33cl - 1 500F</p>
+                  <p>Doople 33cl - 1 500F</p>
+                  <p>Guiness 33cl - 2 000F</p>
+                  <p>Booster Téquila 50cl - 1 000F</p>
+                  <p>Castel 33cl - 1 000F</p>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Nos Whiskys</h4>
+                  <p>Henneys - 5 000F</p>
+                  <p>Glendfiddich - 5 000F</p>
+                  <p>Glenvinet - 4 000F</p>
+                  <p>Diplomatico 12 ans - 5 000F</p>
+                  <p>Martini - 2 000F</p>
+                  <p>Remy Martin - 6 000F</p>
+                  <p>Macallan - 6 000F</p>
+                  <p>Ricard - 2 000F</p>
+                  <p>Jack Daniel's (Bouteille) - 25 000F</p>
+                  <p>Johnnie Double label (Bouteille) - 45 000F</p>
+                  <p>Johnnie Black label (Bouteille) - 35 000F</p>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Nos Boissons Énergisantes</h4>
+                  <p>Red Bull - 2 000F</p>
+                  <p>Doppel malt energy - 2 000F</p>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Nos Boissons Non Alcoolisées</h4>
+                  <p>Sucreries - 1 200F</p>
+                  <p>Eau Laafi 1,5l - 1 500F</p>
+                  <p>Eau gazeuse - 1 000F</p>
+                  <p>Booster mangue orange - 1 500F</p>
+                  <p>Jus bravo (Raisin ou melon) - 2 500F</p>
+                </div>
+              </div>
+              <div class="menu-item">
+                <div class="item-description">
+                  <h4>Nos Cocktails Non Alcoolisés et Nos Mocktails</h4>
+                  <p>
+                    Sunrise (Jus d'ananas, jus d'orange, sirop de grenadine) - 3
+                    500F
+                  </p>
+                  <p>
+                    Mojito fraise (Feuilles de menthe, tranches de citron, sirop
+                    de fraise, sprite) - 3 500F
+                  </p>
+                  <p>
+                    Bora-Bora (Jus d'ananas, jus de la passion, jus de citron,
+                    sirop de grenadine) - 3 500F
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="wine-cigar-section">
+            <div class="wine-champagne">
+              <div class="section-image">
+                <div class="img-placeholder">Photo de Cave à Vin</div>
+              </div>
+              <div class="section-content">
+                <h3>Nos Vins et Champagnes</h3>
+                <p>Une sélection raffinée des meilleurs crus</p>
+                <button class="btn wine-btn" id="wineBtn">
+                  Découvrir notre Carte des Vins
+                </button>
+              </div>
+            </div>
+            <div class="cigars">
+              <div class="section-image">
+                <div class="img-placeholder">Photo de Cigares</div>
+              </div>
+              <div class="section-content">
+                <h3>Nos Cigares</h3>
+                <p>Une collection d'exception pour les connaisseurs</p>
+                <button class="btn cigar-btn" id="cigarBtn">
+                  Découvrir notre Sélection
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div id="wineList" class="wine-list hidden">
+            <h3>Notre Carte des Vins</h3>
+            <div class="wine-categories">
+              <div class="wine-category">
+                <h4>Vins Rouges</h4>
+                <ul>
+                  <li>Château Margaux 2015 - 120 000F</li>
+                  <li>Château Latour 2016 - 110 000F</li>
+                  <li>Château Mouton Rothschild 2017 - 130 000F</li>
+                </ul>
+              </div>
+              <div class="wine-category">
+                <h4>Vins Blancs</h4>
+                <ul>
+                  <li>Domaine Leflaive 2018 - 95 000F</li>
+                  <li>Château d'Yquem 2017 - 150 000F</li>
+                  <li>Domaine de la Romanée-Conti 2016 - 180 000F</li>
+                </ul>
+              </div>
+              <div class="wine-category">
+                <h4>Champagnes</h4>
+                <ul>
+                  <li>Dom Pérignon 2012 - 200 000F</li>
+                  <li>Krug Grande Cuvée - 180 000F</li>
+                  <li>Cristal 2014 - 220 000F</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div id="cigarList" class="cigar-list hidden">
+            <h3>Notre Sélection de Cigares</h3>
+            <div class="cigar-categories">
+              <div class="cigar-category">
+                <h4>Cubains</h4>
+                <ul>
+                  <li>Cohiba Behike 56 - 35 000F</li>
+                  <li>Montecristo No. 2 - 25 000F</li>
+                  <li>Partagás Serie D No. 4 - 22 000F</li>
+                </ul>
+              </div>
+              <div class="cigar-category">
+                <h4>Dominicains</h4>
+                <ul>
+                  <li>Arturo Fuente Opus X - 28 000F</li>
+                  <li>Ashton VSG - 24 000F</li>
+                  <li>Davidoff Winston Churchill - 30 000F</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h2>L'Art Rouge</h2>
-                    <p>Cuisine gastronomique française</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Liens Rapides</h4>
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="menu.html">Menu</a></li>
-                        <li><a href="about.html">À Propos</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="gallery.html">Galerie</a></li>
-                    </ul>
-                </div>
-                <div class="footer-hours">
-                    <h4>Horaires d'Ouverture</h4>
-                    <p>Mardi - Samedi: 19h00 - 23h00</p>
-                    <p>Dimanche - Lundi: Fermé</p>
-                </div>
-                <div class="footer-social">
-                    <h4>Suivez-nous</h4>
-                    <div class="social-icons">
-                        <a href="https://facebook.com/lartrouge" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://instagram.com/lartrouge" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://twitter.com/lartrouge" target="_blank"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h2>L'Art Rouge</h2>
+            <p>Cuisine gastronomique française</p>
+          </div>
+          <div class="footer-links">
+            <h4>Liens Rapides</h4>
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="menu.html#about">À Propos</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="gallery.html">Galerie</a></li>
+            </ul>
+          </div>
+          <div class="footer-hours">
+            <h4>Horaires d'Ouverture</h4>
+            <p>Mardi - Dimanche: 16h00 - 00h00</p>
+            <p>Lundi: Fermé</p>
+          </div>
+          <div class="footer-social">
+            <h4>Suivez-nous</h4>
+            <div class="social-icons">
+              <a href="https://facebook.com/lartrouge" target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://instagram.com/lartrouge" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://twitter.com/lartrouge" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2023 L'Art Rouge. Tous droits réservés.</p>
-            </div>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 L'Art Rouge. Tous droits réservés.</p>
+        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
