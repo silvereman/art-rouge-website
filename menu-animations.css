@@ -107,12 +107,122 @@
 
 .wine-champagne,
 .cigars {
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  perspective: 1000px;
+  margin-bottom: 2rem;
 }
 
-.wine-champagne:hover,
-.cigars:hover {
-  transform: translateY(-5px);
+.wine-card,
+.cigar-card {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.wine-card.flipped,
+.cigar-card.flipped {
+  transform: rotateY(180deg);
+}
+
+.wine-card-front,
+.wine-card-back,
+.cigar-card-front,
+.cigar-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.wine-card-front,
+.cigar-card-front {
+  background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+  color: white;
+}
+
+.wine-card-back,
+.cigar-card-back {
+  background: white;
+  transform: rotateY(180deg);
+  overflow-y: auto;
+}
+
+.wine-categories,
+.cigar-categories {
+  width: 100%;
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.wine-category,
+.cigar-category {
+  margin-bottom: 1.5rem;
+}
+
+.wine-category h4,
+.cigar-category h4 {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-heading);
+}
+
+.wine-category ul,
+.cigar-category ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.wine-category li,
+.cigar-category li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wine-category li::before,
+.cigar-category li::before {
+  content: "•";
+  color: var(--accent-color);
+  margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .wine-card,
+  .cigar-card {
+    height: 400px;
+  }
+
+  .wine-card-front,
+  .wine-card-back,
+  .cigar-card-front,
+  .cigar-card-back {
+    padding: 1.5rem;
+  }
+
+  .wine-category h4,
+  .cigar-category h4 {
+    font-size: 1.1rem;
+  }
+
+  .wine-category li,
+  .cigar-category li {
+    font-size: 0.9rem;
+  }
 }
 
 /* Wine and Cigar Lists */

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - L'Art Rouge</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <h1>L'Art Rouge</h1>
+        </a>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="index.html#about">À Propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="gallery.html">Galerie</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="contact-page">
+      <section class="contact-hero">
+        <div class="container">
+          <h2>Contactez-nous</h2>
+          <p>Nous sommes à votre écoute</p>
+        </div>
+      </section>
+
+      <section class="contact-info-grid">
+        <div class="container">
+          <div class="contact-cards">
+            <div class="contact-card">
+              <div class="card-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <h3>Adresse</h3>
+              <p>123 Rue de la Gastronomie</p>
+              <p>Ouagadougou, Burkina Faso</p>
+              <a
+                href="https://maps.google.com"
+                target="_blank"
+                class="btn secondary"
+                >Voir sur la carte</a
+              >
+            </div>
+
+            <div class="contact-card">
+              <div class="card-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <h3>Horaires d'Ouverture</h3>
+              <div class="hours-grid">
+                <div class="hours-row">
+                  <span>Mardi - Vendredi</span>
+                  <span>16h00 - 00h00</span>
+                </div>
+                <div class="hours-row">
+                  <span>Samedi - Dimanche</span>
+                  <span>12h00 - 00h00</span>
+                </div>
+                <div class="hours-row">
+                  <span>Lundi</span>
+                  <span>Fermé</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="card-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <h3>Téléphone</h3>
+              <p>Réservations: +226 XX XX XX XX</p>
+              <p>Information: +226 XX XX XX XX</p>
+              <a href="tel:+226XXXXXXXX" class="btn secondary">Appeler</a>
+            </div>
+
+            <div class="contact-card">
+              <div class="card-icon">
+                <i class="fab fa-whatsapp"></i>
+              </div>
+              <h3>WhatsApp</h3>
+              <p>Contactez-nous directement</p>
+              <a
+                href="https://wa.me/226XXXXXXXX"
+                target="_blank"
+                class="btn secondary"
+                >Envoyer un message</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="social-media">
+        <div class="container">
+          <h3>Suivez-nous</h3>
+          <div class="social-grid">
+            <a href="#" class="social-card">
+              <i class="fab fa-facebook-f"></i>
+              <span>Facebook</span>
+            </a>
+            <a href="#" class="social-card">
+              <i class="fab fa-instagram"></i>
+              <span>Instagram</span>
+            </a>
+            <a href="#" class="social-card">
+              <i class="fab fa-twitter"></i>
+              <span>Twitter</span>
+            </a>
+            <a href="#" class="social-card">
+              <i class="fab fa-tiktok"></i>
+              <span>TikTok</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="map-section">
+        <div class="container">
+          <h3>Nous Trouver</h3>
+          <div class="map-container">
+            <!-- Placeholder for Google Maps Integration -->
+            <div class="map-placeholder">Carte Interactive Google Maps</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-form-section">
+        <div class="container">
+          <h3>Envoyez-nous un message</h3>
+          <form id="contact-form" class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Sujet</label>
+              <input type="text" id="subject" name="subject" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn primary">Envoyer</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h2>L'Art Rouge</h2>
+            <p>Une expérience culinaire raffinée</p>
+          </div>
+          <div class="footer-links">
+            <h4>Liens Rapides</h4>
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="index.html#about">À Propos</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="gallery.html">Galerie</a></li>
+            </ul>
+          </div>
+          <div class="footer-hours">
+            <h4>Horaires d'Ouverture</h4>
+            <p>Mardi - Vendredi: 16h00 - 00h00</p>
+            <p>Samedi - Dimanche: 12h00 - 00h00</p>
+            <p>Lundi: Fermé</p>
+          </div>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 L'Art Rouge. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
