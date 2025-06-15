@@ -70,6 +70,38 @@ document.addEventListener("DOMContentLoaded", function () {
       this.classList.toggle("flipped");
     });
   }
+
+  // Menu Accordion Functionality
+  const categoryHeaders = document.querySelectorAll(".category-header");
+
+  categoryHeaders.forEach((header) => {
+    header.addEventListener("click", () => {
+      const category = header.parentElement;
+      const content = category.querySelector(".category-content");
+      const icon = header.querySelector(".toggle-icon");
+
+      // Toggle active class on header
+      header.classList.toggle("active");
+
+      // Toggle content visibility
+      content.classList.toggle("active");
+
+      // Close other categories
+      categoryHeaders.forEach((otherHeader) => {
+        if (otherHeader !== header) {
+          otherHeader.classList.remove("active");
+          otherHeader.parentElement
+            .querySelector(".category-content")
+            .classList.remove("active");
+        }
+      });
+    });
+  });
+
+  // Open first category by default
+  if (categoryHeaders.length > 0) {
+    categoryHeaders[0].click();
+  }
 });
 
 // Smooth scroll for anchor links
@@ -177,3 +209,29 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+function sendWhatsAppReservation(event) {
+  event.preventDefault();
+
+  const form = event.target;
+  const date = form.querySelector("#res-date").value;
+  const time = form.querySelector("#res-time").value;
+  const guests = form.querySelector("#res-guests").value;
+  const name = form.querySelector("#res-name").value;
+  const email = form.querySelector("#res-email").value;
+  const phone = form.querySelector("#res-phone").value;
+  const notes = form.querySelector("#res-notes").value;
+
+  const message =
+    `Nouvelle réservation:%0A%0A` +
+    `Nom: ${name}%0A` +
+    `Date: ${date}%0A` +
+    `Heure: ${time}%0A` +
+    `Nombre de personnes: ${guests}%0A` +
+    `Email: ${email}%0A` +
+    `Téléphone: ${phone}%0A` +
+    `Notes: ${notes}`;
+
+  const whatsappUrl = `https://wa.me/22605864646?text=${message}`;
+  window.open(whatsappUrl, "_blank");
+}

@@ -1,0 +1,319 @@
+/* Menu Page Styles */
+.menu-page {
+  padding-top: 8rem;
+}
+
+.menu-header {
+  text-align: center;
+  margin-bottom: 4rem;
+  padding: 2rem;
+  background: var(--light-text);
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+}
+
+.menu-header h2 {
+  margin-bottom: 1rem;
+}
+
+.menu-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.category {
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  background: var(--light-text);
+}
+
+.category-header {
+  padding: 1.5rem;
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: var(--transition);
+}
+
+.category-header:hover {
+  background: #e8e0d3;
+}
+
+.category-header h3 {
+  color: var(--primary-color);
+  margin: 0;
+  font-size: 1.5rem;
+  padding: 0;
+  border: none;
+  font-weight: 600;
+  text-shadow: none;
+}
+
+.category-header h3::after {
+  display: none;
+}
+
+.category-header .toggle-icon {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+  color: var(--primary-color);
+  text-shadow: none;
+}
+
+.category-header.active .toggle-icon {
+  transform: rotate(180deg);
+}
+
+.category-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  background: var(--light-text);
+}
+
+.category-content.active {
+  max-height: 2000px;
+}
+
+.menu-items {
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.menu-item {
+  background: var(--light-text);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.item-description {
+  flex-grow: 1;
+}
+
+.item-description h4 {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.item-description p {
+  color: var(--text-color);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+/* Wine and Cigar Section */
+.wine-cigar-section {
+  background-color: var(--light-bg);
+  padding: 4rem 0;
+}
+
+.wine-champagne,
+.cigar-section {
+  background: var(--light-text);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  margin-bottom: 2rem;
+  transition: var(--transition);
+}
+
+.wine-champagne:hover,
+.cigar-section:hover {
+  transform: translateY(-5px);
+}
+
+.section-image {
+  height: 300px;
+  overflow: hidden;
+}
+
+.section-content {
+  padding: 2rem;
+  text-align: center;
+}
+
+.section-content h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.section-content p {
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+}
+
+.wine-btn,
+.cigar-btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--primary-color);
+  color: var(--light-text);
+  border-radius: 4px;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.wine-btn:hover,
+.cigar-btn:hover {
+  background-color: #6d0000;
+  transform: translateY(-2px);
+}
+
+.wine-list,
+.cigar-list {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.wine-list.hidden,
+.cigar-list.hidden {
+  max-height: 0;
+}
+
+.wine-categories,
+.cigar-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.wine-category,
+.cigar-category {
+  background: var(--light-bg);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.wine-category h4,
+.cigar-category h4 {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.wine-category ul,
+.cigar-category ul {
+  list-style: none;
+}
+
+.wine-category li,
+.cigar-category li {
+  margin-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  position: relative;
+  color: var(--text-color);
+}
+
+.wine-category li::before,
+.cigar-category li::before {
+  content: "•";
+  color: var(--primary-color);
+  position: absolute;
+  left: 0;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .menu-header {
+    margin-bottom: 2rem;
+  }
+
+  .menu-header h2 {
+    font-size: 2rem;
+  }
+
+  .category-header {
+    padding: 1.2rem;
+  }
+
+  .category-header h3 {
+    font-size: 1.3rem;
+  }
+
+  .menu-items {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .section-image {
+    height: 200px;
+  }
+
+  .wine-categories,
+  .cigar-categories {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-item {
+    padding: 1rem;
+  }
+
+  .item-description h4 {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .menu-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .section-content {
+    padding: 1.5rem;
+  }
+
+  .wine-category,
+  .cigar-category {
+    padding: 1rem;
+  }
+}
+
+.wine-card-back {
+  background: white;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.wine-message {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  line-height: 1.6;
+  font-weight: 500;
+  max-width: 80%;
+  margin: 0 auto;
+}
