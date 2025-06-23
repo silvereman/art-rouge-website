@@ -3,7 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menu - L'Art Rouge</title>
+    <title>Menu - L'Art Rouge | Cuisine Gastronomique à Ouagadougou</title>
+    <meta
+      name="description"
+      content="Découvrez le menu de L'Art Rouge à Ouagadougou : entrées, plats, desserts et spécialités françaises dans un cadre élégant. Réservez votre table !"
+    />
+    <link rel="canonical" href="https://www.lartrouge.com/menu.html" />
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property="og:title"
+      content="Menu - L'Art Rouge | Cuisine Gastronomique à Ouagadougou"
+    />
+    <meta
+      property="og:description"
+      content="Découvrez le menu de L'Art Rouge à Ouagadougou : entrées, plats, desserts et spécialités françaises dans un cadre élégant."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.lartrouge.com/menu.html" />
+    <meta
+      property="og:image"
+      content="https://www.lartrouge.com/ressources/images/LOGO.jpg"
+    />
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Menu - L'Art Rouge | Cuisine Gastronomique à Ouagadougou"
+    />
+    <meta
+      name="twitter:description"
+      content="Découvrez le menu de L'Art Rouge à Ouagadougou : entrées, plats, desserts et spécialités françaises dans un cadre élégant."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.lartrouge.com/ressources/images/LOGO.jpg"
+    />
     <link rel="stylesheet" href="base.css" />
     <link rel="stylesheet" href="menu.css" />
     <link rel="stylesheet" href="menu-animations.css" />
@@ -17,15 +51,30 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/jpeg" href="ressources/images/LOGO.jpg" />
   </head>
   <body>
+    <a href="#main-content" class="visually-hidden focusable"
+      >Aller au contenu principal</a
+    >
     <header>
       <div class="logo">
-        <a href="index.html">
-          <h1>L'Art Rouge</h1>
+        <a href="index.html" aria-label="L'Art Rouge Accueil">
+          <img
+            src="ressources/images/LOGO.jpg"
+            alt="L'Art Rouge Logo"
+            style="
+              height: 40px;
+              width: auto;
+              vertical-align: middle;
+              margin-right: 10px;
+            "
+            loading="lazy"
+          />
+          <h1 style="display: inline; vertical-align: middle">L'Art Rouge</h1>
         </a>
       </div>
-      <nav>
+      <nav role="navigation" aria-label="Navigation principale">
         <ul class="nav-links">
           <li><a href="index.html">Accueil</a></li>
           <li><a href="menu.html">Menu</a></li>
@@ -40,15 +89,15 @@
       </nav>
     </header>
 
-    <main class="menu-page">
-      <section class="menu-header">
+    <main id="main-content" class="menu-page" role="main">
+      <section class="menu-header section fade-in">
         <div class="container">
           <h2>Notre Menu</h2>
           <p>Une cuisine raffinée inspirée par les saisons</p>
         </div>
       </section>
-
-      <section class="menu-content">
+      <hr class="section-divider" />
+      <section class="menu-content section fade-in">
         <div class="container">
           <div class="category">
             <div class="category-header">
@@ -555,62 +604,142 @@
                 <div class="menu-item">
                   <div class="item-description">
                     <h4>Nos Bières</h4>
-                    <p>Hennekein 33cl - 2 000F</p>
-                    <p>Beaufort 33cl - 1 500F</p>
-                    <p>Doople 33cl - 1 500F</p>
-                    <p>Guiness 33cl - 2 000F</p>
-                    <p>Booster Téquila 50cl - 1 000F</p>
-                    <p>Castel 33cl - 1 000F</p>
+                    <div class="cigar-line">
+                      <span class="cigar-name">Hennekein 33cl</span
+                      ><span class="cigar-price">2 000F</span>
+                    </div>
+                    <div class="cigar-line">
+                      <span class="cigar-name">Beaufort 33cl</span
+                      ><span class="cigar-price">1 500F</span>
+                    </div>
+                    <div class="cigar-line">
+                      <span class="cigar-name">Doople 33cl</span
+                      ><span class="cigar-price">1 500F</span>
+                    </div>
+                    <div class="cigar-line">
+                      <span class="cigar-name">Guiness 33cl</span
+                      ><span class="cigar-price">2 000F</span>
+                    </div>
+                    <div class="cigar-line">
+                      <span class="cigar-name">Booster Téquila 50cl</span
+                      ><span class="cigar-price">1 000F</span>
+                    </div>
+                    <div class="cigar-line">
+                      <span class="cigar-name">Castel 33cl</span
+                      ><span class="cigar-price">1 000F</span>
+                    </div>
                   </div>
                 </div>
                 <div class="menu-item">
                   <div class="item-description">
                     <h4>Nos Whiskys</h4>
-                    <p>Henneys - 5 000F</p>
-                    <p>Glendfiddich - 5 000F</p>
-                    <p>Glenvinet - 4 000F</p>
-                    <p>Diplomatico 12 ans - 5 000F</p>
-                    <p>Martini - 2 000F</p>
-                    <p>Remy Martin - 6 000F</p>
-                    <p>Macallan - 6 000F</p>
-                    <p>Ricard - 2 000F</p>
-                    <p>Jack Daniel's (Bouteille) - 25 000F</p>
-                    <p>Johnnie Double label (Bouteille) - 45 000F</p>
-                    <p>Johnnie Black label (Bouteille) - 35 000F</p>
+                    <div class="cigar-line">
+                      <span class="cigar-name">Henneys</span
+                      ><span class="cigar-price">5 000F</span>
+                    </div>
+                    <div class="cigar-line">
+                      <span class="cigar-name">Glendfiddich</span
+                      ><span class="cigar-price">5 000F</span>
+                    </div>
+                    <div class="cigar-line">
+                      <span class="cigar-name">Glenvinet</span
+                      ><span class="cigar-price">4 000F</span>
+                    </div>
+                    <div class="cigar-line">
+                      <span class="cigar-name">Diplomatico 12 ans</span
+                      ><span class="cigar-price">5 000F</span>
+                    </div>
+                    <div class="cigar-line">
+                      <span class="cigar-name">Martini</span
+                      ><span class="cigar-price">2 000F</span>
+                    </div>
+                    <div class="cigar-line">
+                      <span class="cigar-name">Remy Martin</span
+                      ><span class="cigar-price">6 000F</span>
+                    </div>
+                    <div class="cigar-line">
+                      <span class="cigar-name">Macallan</span
+                      ><span class="cigar-price">6 000F</span>
+                    </div>
+                    <div class="cigar-line">
+                      <span class="cigar-name">Ricard</span
+                      ><span class="cigar-price">2 000F</span>
+                    </div>
+                    <div class="cigar-line">
+                      <span class="cigar-name">Jack Daniel's (Bouteille)</span
+                      ><span class="cigar-price">25 000F</span>
+                    </div>
+                    <div class="cigar-line">
+                      <span class="cigar-name"
+                        >Johnnie Double label (Bouteille)</span
+                      ><span class="cigar-price">45 000F</span>
+                    </div>
+                    <div class="cigar-line">
+                      <span class="cigar-name"
+                        >Johnnie Black label (Bouteille)</span
+                      ><span class="cigar-price">35 000F</span>
+                    </div>
                   </div>
                 </div>
                 <div class="menu-item">
                   <div class="item-description">
                     <h4>Nos Boissons Énergisantes</h4>
-                    <p>Red Bull - 2 000F</p>
-                    <p>Doppel malt energy - 2 000F</p>
+                    <div class="cigar-line">
+                      <span class="cigar-name">Red Bull</span
+                      ><span class="cigar-price">2 000F</span>
+                    </div>
+                    <div class="cigar-line">
+                      <span class="cigar-name">Doppel malt energy</span
+                      ><span class="cigar-price">2 000F</span>
+                    </div>
                   </div>
                 </div>
                 <div class="menu-item">
                   <div class="item-description">
                     <h4>Nos Boissons Non Alcoolisées</h4>
-                    <p>Sucreries - 1 200F</p>
-                    <p>Eau Laafi 1,5l - 1 500F</p>
-                    <p>Eau gazeuse - 1 000F</p>
-                    <p>Booster mangue orange - 1 500F</p>
-                    <p>Jus bravo (Raisin ou melon) - 2 500F</p>
+                    <div class="cigar-line">
+                      <span class="cigar-name">Sucreries</span
+                      ><span class="cigar-price">1 200F</span>
+                    </div>
+                    <div class="cigar-line">
+                      <span class="cigar-name">Eau Laafi 1,5l</span
+                      ><span class="cigar-price">1 500F</span>
+                    </div>
+                    <div class="cigar-line">
+                      <span class="cigar-name">Eau gazeuse</span
+                      ><span class="cigar-price">1 000F</span>
+                    </div>
+                    <div class="cigar-line">
+                      <span class="cigar-name">Booster mangue orange</span
+                      ><span class="cigar-price">1 500F</span>
+                    </div>
+                    <div class="cigar-line">
+                      <span class="cigar-name">Jus bravo (Raisin ou melon)</span
+                      ><span class="cigar-price">2 500F</span>
+                    </div>
                   </div>
                 </div>
                 <div class="menu-item">
                   <div class="item-description">
                     <h4>Nos Cocktails Non Alcoolisés et Nos Mocktails</h4>
-                    <p>
-                      Sunrise (Jus d'ananas, jus d'orange, sirop de grenadine) -
-                      3 500F
-                    </p>
-                    <p>
-                      Mojito fraise (Feuilles de menthe, tranches de citron,
-                      sirop de fraise, sprite) - 3 500F
-                    </p>
-                    <p>
-                      Bora-Bora (Jus d'ananas, jus de la passion, jus de citron,
-                      sirop de grenadine) - 3 500F
-                    </p>
+                    <div class="cigar-line">
+                      <span class="cigar-name"
+                        >Sunrise (Jus d'ananas, jus d'orange, sirop de
+                        grenadine)</span
+                      ><span class="cigar-price">3 500F</span>
+                    </div>
+                    <div class="cigar-line">
+                      <span class="cigar-name"
+                        >Mojito fraise (Feuilles de menthe, tranches de citron,
+                        sirop de fraise, sprite)</span
+                      ><span class="cigar-price">3 500F</span>
+                    </div>
+                    <div class="cigar-line">
+                      <span class="cigar-name"
+                        >Bora-Bora (Jus d'ananas, jus de la passion, jus de
+                        citron, sirop de grenadine)</span
+                      ><span class="cigar-price">3 500F</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -649,27 +778,72 @@
                       <div class="cigar-category">
                         <h4>Cohiba</h4>
                         <ul>
-                          <li>Cohiba Siglo VI <span>45 000F</span></li>
-                          <li>Cohiba Behike <span>55 000F</span></li>
-                          <li>Cohiba Esplendidos <span>40 000F</span></li>
+                          <li>
+                            <div class="cigar-line">
+                              <span class="cigar-name">Cohiba Siglo VI</span
+                              ><span class="cigar-price">45 000F</span>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="cigar-line">
+                              <span class="cigar-name">Cohiba Behike</span
+                              ><span class="cigar-price">55 000F</span>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="cigar-line">
+                              <span class="cigar-name">Cohiba Esplendidos</span
+                              ><span class="cigar-price">40 000F</span>
+                            </div>
+                          </li>
                         </ul>
                       </div>
                       <div class="cigar-category">
                         <h4>Montecristo</h4>
                         <ul>
-                          <li>Montecristo No. 2 <span>35 000F</span></li>
-                          <li>Montecristo Edmundo <span>30 000F</span></li>
                           <li>
-                            Montecristo Double Corona <span>38 000F</span>
+                            <div class="cigar-line">
+                              <span class="cigar-name">Montecristo No. 2</span
+                              ><span class="cigar-price">35 000F</span>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="cigar-line">
+                              <span class="cigar-name">Montecristo Edmundo</span
+                              ><span class="cigar-price">30 000F</span>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="cigar-line">
+                              <span class="cigar-name"
+                                >Montecristo Double Corona</span
+                              ><span class="cigar-price">38 000F</span>
+                            </div>
                           </li>
                         </ul>
                       </div>
                       <div class="cigar-category">
                         <h4>Partagás</h4>
                         <ul>
-                          <li>Partagás Serie D No. 4 <span>32 000F</span></li>
-                          <li>Partagás Lusitanias <span>36 000F</span></li>
-                          <li>Partagás 8-9-8 <span>34 000F</span></li>
+                          <li>
+                            <div class="cigar-line">
+                              <span class="cigar-name"
+                                >Partagás Serie D No. 4</span
+                              ><span class="cigar-price">32 000F</span>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="cigar-line">
+                              <span class="cigar-name">Partagás Lusitanias</span
+                              ><span class="cigar-price">36 000F</span>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="cigar-line">
+                              <span class="cigar-name">Partagás 8-9-8</span
+                              ><span class="cigar-price">34 000F</span>
+                            </div>
+                          </li>
                         </ul>
                       </div>
                     </div>
@@ -682,7 +856,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
       <div class="container">
         <div class="footer-content">
           <div class="footer-logo">

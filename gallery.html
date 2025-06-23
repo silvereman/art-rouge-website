@@ -3,7 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Galerie - L'Art Rouge</title>
+    <title>Galerie - L'Art Rouge | Ambiance & Spécialités à Ouagadougou</title>
+    <meta
+      name="description"
+      content="Découvrez la galerie photo de L'Art Rouge à Ouagadougou : ambiance, plats, événements et moments uniques dans notre restaurant gastronomique."
+    />
+    <link rel="canonical" href="https://www.lartrouge.com/gallery.html" />
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property="og:title"
+      content="Galerie - L'Art Rouge | Ambiance & Spécialités à Ouagadougou"
+    />
+    <meta
+      property="og:description"
+      content="Découvrez la galerie photo de L'Art Rouge à Ouagadougou : ambiance, plats, événements et moments uniques dans notre restaurant gastronomique."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.lartrouge.com/gallery.html" />
+    <meta
+      property="og:image"
+      content="https://www.lartrouge.com/ressources/images/LOGO.jpg"
+    />
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Galerie - L'Art Rouge | Ambiance & Spécialités à Ouagadougou"
+    />
+    <meta
+      name="twitter:description"
+      content="Découvrez la galerie photo de L'Art Rouge à Ouagadougou : ambiance, plats, événements et moments uniques dans notre restaurant gastronomique."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.lartrouge.com/ressources/images/LOGO.jpg"
+    />
     <link rel="stylesheet" href="base.css" />
     <link rel="stylesheet" href="gallery.css" />
     <link
@@ -16,15 +50,29 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/jpeg" href="ressources/images/LOGO.jpg" />
   </head>
   <body>
+    <a href="#main-content" class="visually-hidden focusable"
+      >Aller au contenu principal</a
+    >
     <header>
       <div class="logo">
-        <a href="index.html">
-          <h1>L'Art Rouge</h1>
+        <a href="index.html" aria-label="L'Art Rouge Accueil">
+          <img
+            src="ressources/images/LOGO.jpg"
+            alt="L'Art Rouge Logo"
+            style="
+              height: 40px;
+              width: auto;
+              vertical-align: middle;
+              margin-right: 10px;
+            "
+          />
+          <h1 style="display: inline; vertical-align: middle">L'Art Rouge</h1>
         </a>
       </div>
-      <nav>
+      <nav role="navigation" aria-label="Navigation principale">
         <ul class="nav-links">
           <li><a href="index.html">Accueil</a></li>
           <li><a href="menu.html">Menu</a></li>
@@ -40,15 +88,15 @@
       </nav>
     </header>
 
-    <main class="gallery-page">
-      <section class="gallery-hero">
+    <main id="main-content" class="gallery-page" role="main">
+      <section class="gallery-hero section fade-in">
         <div class="container">
           <h2>Notre Galerie</h2>
           <p>Découvrez l'ambiance de L'Art Rouge</p>
         </div>
       </section>
-
-      <section class="gallery-controls">
+      <hr class="section-divider" />
+      <section class="gallery-controls section fade-in">
         <div class="container">
           <div class="filter-sort-container">
             <div class="filter-buttons">
@@ -71,8 +119,8 @@
           </div>
         </div>
       </section>
-
-      <section class="gallery-grid">
+      <hr class="section-divider" />
+      <section class="gallery-grid section fade-in">
         <div class="container">
           <div class="masonry-gallery">
             <!-- Interior Images -->
@@ -84,6 +132,7 @@
               <img
                 src="ressources/images/IMG_3876.jpg"
                 alt="Notre Salle Principale"
+                loading="lazy"
               />
               <div class="gallery-item-info">
                 <h3>Notre Salle Principale</h3>
@@ -95,7 +144,11 @@
               data-category="interior"
               data-date="2024-03-10"
             >
-              <img src="ressources/images/IMG_3883.jpg" alt="Le Bar" />
+              <img
+                src="ressources/images/IMG_3883.jpg"
+                alt="Le Bar"
+                loading="lazy"
+              />
               <div class="gallery-item-info">
                 <h3>Le Bar</h3>
                 <p>Notre bar raffiné</p>
@@ -106,7 +159,11 @@
               data-category="interior"
               data-date="2024-03-08"
             >
-              <img src="ressources/images/IMG_2400.jpg" alt="Notre Terrasse" />
+              <img
+                src="ressources/images/IMG_2400.jpg"
+                alt="Notre Terrasse"
+                loading="lazy"
+              />
               <div class="gallery-item-info">
                 <h3>Notre Terrasse</h3>
                 <p>Un espace extérieur élégant</p>
@@ -120,6 +177,7 @@
               <img
                 src="ressources/images/IMG_3888.jpg"
                 alt="Notre Salon Privé"
+                loading="lazy"
               />
               <div class="gallery-item-info">
                 <h3>Notre Salon Privé</h3>
@@ -136,6 +194,7 @@
               <img
                 src="ressources/images/IMG_3593.jpg"
                 alt="Suprême de Gambas"
+                loading="lazy"
               />
               <div class="gallery-item-info">
                 <h3>Suprême de Gambas</h3>
@@ -147,7 +206,11 @@
               data-category="food"
               data-date="2024-03-08"
             >
-              <img src="ressources/images/IMG_3560.jpg" alt="Côte de Bœuf" />
+              <img
+                src="ressources/images/IMG_3560.jpg"
+                alt="Côte de Bœuf"
+                loading="lazy"
+              />
               <div class="gallery-item-info">
                 <h3>Côte de Bœuf</h3>
                 <p>Notre pièce maîtresse</p>
@@ -163,6 +226,7 @@
               <img
                 src="ressources/images/IMG_1977.heic"
                 alt="Soirée Dégustation"
+                loading="lazy"
               />
               <div class="gallery-item-info">
                 <h3>Soirée Dégustation</h3>
@@ -174,7 +238,11 @@
               data-category="events"
               data-date="2024-03-05"
             >
-              <img src="ressources/images/IMG_3880.jpg" alt="Anniversaire" />
+              <img
+                src="ressources/images/IMG_3880.jpg"
+                alt="Anniversaire"
+                loading="lazy"
+              />
               <div class="gallery-item-info">
                 <h3>Anniversaire</h3>
                 <p>Célébration spéciale</p>
@@ -187,13 +255,13 @@
       <div class="lightbox">
         <div class="lightbox-content">
           <span class="close-lightbox">&times;</span>
-          <img src="" alt="" class="lightbox-image" />
+          <img src="" alt="" class="lightbox-image" loading="lazy" />
           <div class="lightbox-caption"></div>
         </div>
       </div>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
       <div class="container">
         <div class="footer-content">
           <div class="footer-logo">
@@ -228,6 +296,18 @@
         </div>
       </div>
     </footer>
+
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3898.107953525682!2d-1.4998850239276553!3d12.308516387949247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xe2ebf0a1aaebdf9%3A0xb2bebe7e2f1fe633!2sL&#39;Art%20rouge%20restaurant%20et%20cave%20%C3%A0%20vin!5e0!3m2!1sfr!2sbf!4v1750715639603!5m2!1sfr!2sbf"
+        width="100%"
+        height="350"
+        style="border: 0; border-radius: 12px"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
 
     <script src="script.js"></script>
   </body>

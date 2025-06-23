@@ -3,7 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact - L'Art Rouge</title>
+    <title>
+      Contact - L'Art Rouge | Restaurant Gastronomique à Ouagadougou
+    </title>
+    <meta
+      name="description"
+      content="Contactez L'Art Rouge à Ouagadougou pour vos réservations, questions ou événements spéciaux. Notre équipe vous répond rapidement !"
+    />
+    <link rel="canonical" href="https://www.lartrouge.com/contact.html" />
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property="og:title"
+      content="Contact - L'Art Rouge | Restaurant Gastronomique à Ouagadougou"
+    />
+    <meta
+      property="og:description"
+      content="Contactez L'Art Rouge à Ouagadougou pour vos réservations, questions ou événements spéciaux. Notre équipe vous répond rapidement !"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.lartrouge.com/contact.html" />
+    <meta
+      property="og:image"
+      content="https://www.lartrouge.com/ressources/images/LOGO.jpg"
+    />
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Contact - L'Art Rouge | Restaurant Gastronomique à Ouagadougou"
+    />
+    <meta
+      name="twitter:description"
+      content="Contactez L'Art Rouge à Ouagadougou pour vos réservations, questions ou événements spéciaux. Notre équipe vous répond rapidement !"
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.lartrouge.com/ressources/images/LOGO.jpg"
+    />
     <link rel="stylesheet" href="base.css" />
     <link rel="stylesheet" href="contact.css" />
     <link
@@ -16,15 +52,30 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/jpeg" href="ressources/images/LOGO.jpg" />
   </head>
   <body>
+    <a href="#main-content" class="visually-hidden focusable"
+      >Aller au contenu principal</a
+    >
     <header>
       <div class="logo">
-        <a href="index.html">
-          <h1>L'Art Rouge</h1>
+        <a href="index.html" aria-label="L'Art Rouge Accueil">
+          <img
+            src="ressources/images/LOGO.jpg"
+            alt="L'Art Rouge Logo"
+            style="
+              height: 40px;
+              width: auto;
+              vertical-align: middle;
+              margin-right: 10px;
+            "
+            loading="lazy"
+          />
+          <h1 style="display: inline; vertical-align: middle">L'Art Rouge</h1>
         </a>
       </div>
-      <nav>
+      <nav role="navigation" aria-label="Navigation principale">
         <ul class="nav-links">
           <li><a href="index.html">Accueil</a></li>
           <li><a href="menu.html">Menu</a></li>
@@ -40,15 +91,15 @@
       </nav>
     </header>
 
-    <main class="contact-page">
-      <section class="contact-hero">
+    <main id="main-content" class="contact-page" role="main">
+      <section class="contact-hero section fade-in">
         <div class="container">
           <h2>Contactez-nous</h2>
           <p>Nous sommes à votre écoute</p>
         </div>
       </section>
-
-      <section class="contact-info-grid">
+      <hr class="section-divider" />
+      <section class="contact-info-grid section fade-in">
         <div class="container">
           <div class="contact-cards">
             <div class="contact-card">
@@ -56,10 +107,10 @@
                 <i class="fas fa-map-marker-alt"></i>
               </div>
               <h3>Adresse</h3>
-              <p>123 Rue de la Gastronomie</p>
+              <p>Ouaga 2000</p>
               <p>Ouagadougou, Burkina Faso</p>
               <a
-                href="https://maps.google.com"
+                href="https://maps.app.goo.gl/39xSPxttyYKKVFc78?g_st=com.google.maps.preview.copy"
                 target="_blank"
                 class="btn secondary"
                 >Voir sur la carte</a
@@ -92,9 +143,8 @@
                 <i class="fas fa-phone"></i>
               </div>
               <h3>Téléphone</h3>
-              <p>Réservations: +226 XX XX XX XX</p>
-              <p>Information: +226 XX XX XX XX</p>
-              <a href="tel:+226XXXXXXXX" class="btn secondary">Appeler</a>
+              <p>Informations: +226 05 86 46 46</p>
+              <a href="tel:+22605864646" class="btn secondary">Appeler</a>
             </div>
 
             <div class="contact-card">
@@ -104,7 +154,7 @@
               <h3>WhatsApp</h3>
               <p>Contactez-nous directement</p>
               <a
-                href="https://wa.me/226XXXXXXXX"
+                href="https://wa.me/+2260586464"
                 target="_blank"
                 class="btn secondary"
                 >Envoyer un message</a
@@ -113,42 +163,45 @@
           </div>
         </div>
       </section>
-
-      <section class="social-media">
+      <hr class="section-divider" />
+      <section class="social-media section fade-in">
         <div class="container">
           <h3>Suivez-nous</h3>
           <div class="social-grid">
-            <a href="#" class="social-card">
+            <a href="https://web.facebook.com/p/LArt-Rouge-100091808035895/?_rdc=1&_rdr" class="social-card">
               <i class="fab fa-facebook-f"></i>
               <span>Facebook</span>
             </a>
-            <a href="#" class="social-card">
+            <a href="https://www.instagram.com/p/Cvf26_PsHqK/?utm_source=ig_web_copy_link" class="social-card">
               <i class="fab fa-instagram"></i>
               <span>Instagram</span>
             </a>
-            <a href="#" class="social-card">
-              <i class="fab fa-twitter"></i>
-              <span>Twitter</span>
-            </a>
-            <a href="#" class="social-card">
+            <a href="https://www.tiktok.com/@lartrouge" class="social-card">
               <i class="fab fa-tiktok"></i>
               <span>TikTok</span>
             </a>
           </div>
         </div>
       </section>
-
-      <section class="map-section">
+      <hr class="section-divider" />
+      <section class="map-section section fade-in">
         <div class="container">
           <h3>Nous Trouver</h3>
           <div class="map-container">
-            <!-- Placeholder for Google Maps Integration -->
-            <div class="map-placeholder">Carte Interactive Google Maps</div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3898.107953525682!2d-1.4998850239276553!3d12.308516387949247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xe2ebf0a1aaebdf9%3A0xb2bebe7e2f1fe633!2sL&#39;Art%20rouge%20restaurant%20et%20cave%20%C3%A0%20vin!5e0!3m2!1sfr!2sbf!4v1750715639603!5m2!1sfr!2sbf"
+              width="100%"
+              height="350"
+              style="border: 0; border-radius: 12px"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </section>
-
-      <section class="contact-form-section">
+      <hr class="section-divider" />
+      <section class="contact-form-section section fade-in">
         <div class="container">
           <h3>Envoyez-nous un message</h3>
           <form id="contact-form" class="contact-form">
@@ -181,7 +234,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
       <div class="container">
         <div class="footer-content">
           <div class="footer-logo">

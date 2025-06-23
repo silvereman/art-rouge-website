@@ -3,7 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>L'Art Rouge - Restaurant Gastronomique</title>
+    <title>L'Art Rouge - Restaurant Gastronomique à Ouagadougou</title>
+    <meta
+      name="description"
+      content="L'Art Rouge, restaurant gastronomique à Ouagadougou, propose une expérience culinaire raffinée, des spécialités françaises, une ambiance élégante et un service exceptionnel. Réservez votre table dès aujourd'hui !"
+    />
+    <link rel="canonical" href="https://www.lartrouge.com/" />
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property="og:title"
+      content="L'Art Rouge - Restaurant Gastronomique à Ouagadougou"
+    />
+    <meta
+      property="og:description"
+      content="Découvrez L'Art Rouge, restaurant gastronomique à Ouagadougou : cuisine raffinée, ambiance élégante, service exceptionnel. Réservez votre table !"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.lartrouge.com/" />
+    <meta
+      property="og:image"
+      content="https://www.lartrouge.com/ressources/images/LOGO.jpg"
+    />
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="L'Art Rouge - Restaurant Gastronomique à Ouagadougou"
+    />
+    <meta
+      name="twitter:description"
+      content="L'Art Rouge, restaurant gastronomique à Ouagadougou, propose une expérience culinaire raffinée, des spécialités françaises, une ambiance élégante et un service exceptionnel."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.lartrouge.com/ressources/images/LOGO.jpg"
+    />
     <link rel="stylesheet" href="base.css" />
     <link rel="stylesheet" href="index.css" />
     <link
@@ -16,15 +50,30 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/jpeg" href="ressources/images/LOGO.jpg" />
   </head>
   <body>
+    <a href="#main-content" class="visually-hidden focusable"
+      >Aller au contenu principal</a
+    >
     <header>
       <div class="logo">
-        <a href="index.html">
-          <h1>L'Art Rouge</h1>
+        <a href="index.html" aria-label="L'Art Rouge Accueil">
+          <img
+            src="ressources/images/LOGO.jpg"
+            alt="L'Art Rouge Logo"
+            style="
+              height: 40px;
+              width: auto;
+              vertical-align: middle;
+              margin-right: 10px;
+            "
+            loading="lazy"
+          />
+          <h1 style="display: inline; vertical-align: middle">L'Art Rouge</h1>
         </a>
       </div>
-      <nav>
+      <nav role="navigation" aria-label="Navigation principale">
         <ul class="nav-links">
           <li><a href="index.html">Accueil</a></li>
           <li><a href="menu.html">Menu</a></li>
@@ -40,8 +89,8 @@
       </nav>
     </header>
 
-    <main class="home-page">
-      <section class="hero">
+    <main id="main-content" class="home-page" role="main">
+      <section class="hero section fade-in">
         <div class="hero-content">
           <h2>Une Expérience Culinaire Raffinée</h2>
           <p>Bienvenue à L'Art Rouge, où la gastronomie rencontre l'élégance</p>
@@ -51,8 +100,8 @@
           </div>
         </div>
       </section>
-
-      <section class="featured-dishes">
+      <hr class="section-divider" />
+      <section class="featured-dishes section fade-in">
         <div class="container">
           <h2>Nos Spécialités</h2>
           <div class="dishes-carousel">
@@ -61,6 +110,7 @@
                 <img
                   src="ressources/images/IMG_6485.jpg"
                   alt="Suprême royal de gambas au caraïbe crémeux"
+                  loading="lazy"
                 />
               </div>
               <div class="dish-info">
@@ -73,6 +123,7 @@
                 <img
                   src="ressources/images/IMG_6638.jpg"
                   alt="Côte de bœuf sauce béarnaise"
+                  loading="lazy"
                 />
               </div>
               <div class="dish-info">
@@ -85,6 +136,7 @@
                 <img
                   src="ressources/images/IMG_6650.jpg"
                   alt="Mix grill de la mer"
+                  loading="lazy"
                 />
               </div>
               <div class="dish-info">
@@ -95,8 +147,8 @@
           </div>
         </div>
       </section>
-
-      <section class="gallery-preview">
+      <hr class="section-divider" />
+      <section class="gallery-preview section fade-in">
         <div class="container">
           <h2>Notre Galerie</h2>
           <div class="gallery-scroll">
@@ -104,29 +156,36 @@
               <img
                 src="ressources/images/IMG_3874.jpg"
                 alt="Photo d'Intérieur"
+                loading="lazy"
               />
             </div>
             <div class="gallery-item">
-              <img src="ressources/images/IMG_3886.jpg" alt="Photo de Plat" />
+              <img
+                src="ressources/images/IMG_3886.jpg"
+                alt="Photo de Plat"
+                loading="lazy"
+              />
             </div>
             <div class="gallery-item">
               <img
                 src="ressources/images/IMG_3871.jpg"
                 alt="Photo d'Événement"
+                loading="lazy"
               />
             </div>
             <div class="gallery-item">
               <img
                 src="ressources/images/IMG_6484.jpg"
                 alt="Photo d'Intérieur"
+                loading="lazy"
               />
             </div>
           </div>
           <a href="gallery.html" class="btn secondary">Voir Plus</a>
         </div>
       </section>
-
-      <section id="about" class="about-section">
+      <hr class="section-divider" />
+      <section id="about" class="about-section section fade-in">
         <div class="container">
           <h2>À Propos de L'Art Rouge</h2>
           <div class="about-content">
@@ -147,13 +206,14 @@
               <img
                 src="ressources/images/IMG_6641.jpg"
                 alt="Photo du Restaurant"
+                loading="lazy"
               />
             </div>
           </div>
         </div>
       </section>
-
-      <section class="ambiance">
+      <hr class="section-divider" />
+      <section class="ambiance section fade-in">
         <div class="container">
           <h2>Notre Ambiance</h2>
           <div class="gallery-grid">
@@ -161,18 +221,28 @@
               <img
                 src="ressources/images/IMG_3874.jpg"
                 alt="Notre Salle Principale"
+                loading="lazy"
               />
             </div>
             <div class="gallery-item">
-              <img src="ressources/images/IMG_3886.jpg" alt="Notre Bar" />
+              <img
+                src="ressources/images/IMG_3886.jpg"
+                alt="Notre Bar"
+                loading="lazy"
+              />
             </div>
             <div class="gallery-item">
-              <img src="ressources/images/IMG_3871.jpg" alt="Notre Terrasse" />
+              <img
+                src="ressources/images/IMG_3871.jpg"
+                alt="Notre Terrasse"
+                loading="lazy"
+              />
             </div>
             <div class="gallery-item">
               <img
                 src="ressources/images/IMG_6484.jpg"
                 alt="Notre Salon Privé"
+                loading="lazy"
               />
             </div>
           </div>
@@ -185,16 +255,20 @@
           </p>
         </div>
       </section>
-
-      <section class="contact-info">
+      <hr class="section-divider" />
+      <section class="contact-info section fade-in">
         <div class="container">
           <h2>Contact & Réservations</h2>
           <div class="info-grid">
             <div class="info-card">
               <i class="fas fa-map-marker-alt"></i>
               <h3>Adresse</h3>
-              <p>8G53+C39 Ouagadougou</p>
-              <p>Ouagadougou, Burkina Faso</p>
+              <a
+                href="https://maps.app.goo.gl/39xSPxttyYKKVFc78?g_st=com.google.maps.preview.copy"
+                target="_blank"
+                class="btn secondary"
+                >Voir sur la carte</a
+              >
             </div>
             <div class="info-card">
               <i class="fas fa-clock"></i>
@@ -204,7 +278,7 @@
             </div>
             <div class="info-card">
               <i class="fas fa-phone"></i>
-              <h3>Téléphone</h3>
+              <h3>Contacts</h3>
               <p><a href="tel:+22605864646">05 86 46 46</a></p>
               <p>
                 <a href="mailto:lart_rouge@outlook.com"
@@ -215,17 +289,24 @@
           </div>
         </div>
       </section>
-
+      <hr class="section-divider" />
       <section class="map-section">
         <div class="container">
           <h3>Nous Trouver</h3>
           <div class="map-container">
-            <!-- Placeholder for Google Maps Integration -->
-            <div class="map-placeholder">Carte Interactive Google Maps</div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3898.107953525682!2d-1.4998850239276553!3d12.308516387949247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xe2ebf0a1aaebdf9%3A0xb2bebe7e2f1fe633!2sL&#39;Art%20rouge%20restaurant%20et%20cave%20%C3%A0%20vin!5e0!3m2!1sfr!2sbf!4v1750715639603!5m2!1sfr!2sbf"
+              width="100%"
+              height="350"
+              style="border: 0; border-radius: 12px"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </section>
-
+      <hr class="section-divider" />
       <section id="reservation" class="reservation-widget">
         <div class="container">
           <h3>Réserver une Table</h3>
@@ -280,7 +361,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
       <div class="container">
         <div class="footer-content">
           <div class="footer-logo">

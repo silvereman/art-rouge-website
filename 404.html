@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page non trouvée - L'Art Rouge</title>
+    <meta name="robots" content="noindex" />
+    <link rel="stylesheet" href="base.css" />
+    <link rel="icon" type="image/jpeg" href="ressources/images/LOGO.jpg" />
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: var(--light-bg);
+      }
+      .error-container {
+        text-align: center;
+        padding: 3rem;
+      }
+      .error-logo {
+        height: 60px;
+        margin-bottom: 2rem;
+      }
+      h1 {
+        font-size: 5rem;
+        color: var(--primary-color);
+      }
+      p {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+      }
+      a.btn {
+        background: var(--primary-color);
+        color: var(--light-text);
+        padding: 1rem 2rem;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: background 0.3s;
+      }
+      a.btn:hover {
+        background: var(--accent-color);
+        color: var(--primary-color);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="error-container">
+      <img
+        src="ressources/images/LOGO.jpg"
+        alt="L'Art Rouge Logo"
+        class="error-logo"
+        loading="lazy"
+      />
+      <h1>404</h1>
+      <p>Oups ! La page que vous cherchez n'existe pas ou a été déplacée.</p>
+      <a href="index.html" class="btn">Retour à l'accueil</a>
+    </div>
+  </body>
+</html>

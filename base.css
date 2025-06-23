@@ -7,6 +7,13 @@
   --light-text: #fff;
   --dark-bg: #222;
   --light-bg: #f9f9f9;
+  --section-bg: #fcfcfc;
+  --divider-color: #ececec;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 6rem;
   --font-heading: "Playfair Display", serif;
   --font-body: "Raleway", sans-serif;
   --transition: all 0.3s ease;
@@ -435,13 +442,19 @@ footer {
 /* Animation Classes */
 .fade-in {
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease forwards;
 }
 
-.fade-in.appear {
-  opacity: 1;
-  transform: translateY(0);
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .slide-in-left {
@@ -489,4 +502,39 @@ footer {
 
 .footer-contact a:hover {
   color: var(--accent-color);
+}
+
+/* Utility classes for spacing and section separation */
+.section {
+  padding: var(--spacing-xl) 0;
+  background: var(--section-bg);
+}
+.section-divider {
+  border: none;
+  border-top: 2px solid var(--divider-color);
+  margin: var(--spacing-lg) 0;
+}
+.mt-lg {
+  margin-top: var(--spacing-lg);
+}
+.mb-lg {
+  margin-bottom: var(--spacing-lg);
+}
+.pt-lg {
+  padding-top: var(--spacing-lg);
+}
+.pb-lg {
+  padding-bottom: var(--spacing-lg);
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }

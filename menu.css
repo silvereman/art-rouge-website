@@ -317,3 +317,28 @@
   max-width: 80%;
   margin: 0 auto;
 }
+
+.cigar-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.cigar-name {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cigar-price {
+  flex-shrink: 0;
+  margin-left: 1rem;
+  white-space: nowrap;
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
